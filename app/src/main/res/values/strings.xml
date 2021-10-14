@@ -3,4 +3,12 @@
     <string name="username_hint">نام کاربری را وارد کنید.</string>
     <string name="password_hint">رمز خود را وارد کنید.</string>
     <string name="btn_text">ورود</string>
+
+    <string name="btn_pay">محاسبه پرداخت</string>
+
+    <string name="time_hint">ساعت کارکرد</string>
+    <string name="rate_hint">نرخ کارکرد یک ساعت</string>
+    <string name="tax_hint">درصد مالیات</string>
+    <string name="total_hint">مبلغ دریافتی</string>
+
 </resources>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAccounting">
         <activity
+            android:name=".PayActivity"
+            android:exported="true" />
+        <activity
             android:name=".AccountActivity"
             android:exported="true" />
         <activity
