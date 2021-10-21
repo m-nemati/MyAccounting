@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,6 +17,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_time"
+            android:fontFamily="@font/vazir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/time_hint" />
@@ -31,6 +34,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_one_rate"
+            android:fontFamily="@font/vazir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/rate_hint" />
@@ -45,31 +50,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_tax"
+            android:fontFamily="@font/vazir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tax_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_calc_pay"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Button"
+        android:text="@string/btn_pay_calc"
+        android:fontFamily="@font/vazir"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/output_total"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/vazir"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4">
+        app:layout_constraintTop_toBottomOf="@+id/btn_calc_pay" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/total_hint" />
-    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

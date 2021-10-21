@@ -11,4 +11,6 @@
     <string name="tax_hint">درصد مالیات</string>
     <string name="total_hint">مبلغ دریافتی</string>
 
+    <string name="btn_pay_calc">محاسبه پرداخت</string>
+
 </resources>
